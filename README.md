@@ -1,5 +1,4 @@
 ﻿# Space_Weather_App
-# Space_Weather_App
 1.	Dynamically inserted images and text inside the DOM. 
 2.	Applied and registered events and quick events for buttons in the app using jQuery.
 3.	Used Ajax to GET response from date, image, title and explanation property from the API for the first card block and then clear.
