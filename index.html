@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
+    <title>Space and Weather Guru's</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="card-header">Sunil's Space &amp; Weather Gurus</h1>
+            <!--Application contains 2 body for the card-->
+                <!-- To get the images, and to get the information on weather--> 
+            <div class="card-body">
+                <!--Content related to the Space-->
+                <div id="space">
+                    <div id="apod-access-date"></div>
+                    <img id="apod-image" src=''></img>
+                    <div id="apod-title"></div>
+                    <div id="apod-explanation"></div>
+                 </div>
+                 <button id="nasabutton" class="btn btn-primary">Get space image</button>
+                 <button id="clearnasabutton" class="btn btn-primary">Clear space image</button>
+            </div>
+            <!--HTML to access openweathermap.org Web Services using bootstrap lib-->
+            <div class="card-body">
+                <input type="text" name="zip" id="zip" placeholder="Enter zip code">
+                <button id="weatherbutton" class="btn btn-primary">Get weather</button>
+                <button id="clearweatherbutton" class="btn btn-primary">Clear weather</button>
+
+                <!--Weather related content-->
+                <div id="weather">
+                    <span class="label">City Name:</span><span id="city_name"></span><br/>
+                    <span class="label">Temperature:</span><span id="temperature"></span><br/>
+                    <span class="label">Pressure:</span><span id="pressure"></span><br/>
+                    <span class="label">Humidity:</span><span id="humidity"></span><br/>
+                    <span class="label">Wind Speed:</span><span id="wind_speed"></span><br/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Browser sees jQuery before other codes-->
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="app-index.js"></script>
+
+</body>
+</html>
